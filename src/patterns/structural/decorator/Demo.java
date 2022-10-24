@@ -15,6 +15,8 @@ public class Demo {
                                          new EncryptionDecorator(
                                              new FileDataSource(sFile)));
         encoded.writeData(salaryRecords);
+        // Decorator will figure out which one comes first. Just call writeData
+        
         DataSource plain = new FileDataSource(sFile);
 
         System.out.println("- Input ----------------");

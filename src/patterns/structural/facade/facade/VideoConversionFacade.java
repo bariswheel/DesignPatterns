@@ -6,6 +6,9 @@ import patterns.structural.facade.some_complex_media_library.*;
 
 public class VideoConversionFacade {
     public File convertVideo(String fileName, String format) {
+        // Inside this method, you implement all the logic that manipulate the subsystem. -- leo 
+        // Client doesn't need to know about the logic. 
+
         System.out.println("VideoConversionFacade: conversion started.");
         
         VideoFile file = new VideoFile(fileName);

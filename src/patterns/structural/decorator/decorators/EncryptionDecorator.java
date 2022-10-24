@@ -5,7 +5,8 @@ import java.util.Base64;
 public class EncryptionDecorator extends DataSourceDecorator {
 
     public EncryptionDecorator(DataSource source) {
-        super(source);
+        super(source);  // LEO: We're calling the constructor from the superclass which creates the reference
+        // i.e. { this.wrappee = source }
     }
 
     @Override
