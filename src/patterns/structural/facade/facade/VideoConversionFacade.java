@@ -8,6 +8,9 @@ public class VideoConversionFacade {
     public File convertVideo(String fileName, String format) {
         // Inside this method, you implement all the logic that manipulate the subsystem. -- leo 
         // Client doesn't need to know about the logic. 
+        // All this logic is what allows you to use that library.
+        // This facade is not adding any extra behavior.
+        // It's just simplifying access to our complex subsystem.
 
         System.out.println("VideoConversionFacade: conversion started.");
         

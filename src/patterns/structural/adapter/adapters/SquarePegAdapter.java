@@ -7,9 +7,10 @@ import patterns.structural.adapter.square.SquarePeg;
  * Adapter allows fitting square pegs into round holes.
  */
 public class SquarePegAdapter extends RoundPeg {
-    private SquarePeg peg;
+    private SquarePeg peg; // our adapter will have a reference to the incompatible entity, the square peg
+    // this is the hollow diamond (contains a reference to)
 
-    public SquarePegAdapter(SquarePeg peg) {
+    public SquarePegAdapter(SquarePeg peg) {    // whenever method name is the same as class name, it's a constructor.  
         this.peg = peg;
     }
 

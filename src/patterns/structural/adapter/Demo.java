@@ -22,7 +22,7 @@ public class Demo {
         // hole.fits(smallSqPeg); // Won't compile.
 
         // Adapter solves the problem.
-        SquarePegAdapter smallSqPegAdapter = new SquarePegAdapter(smallSqPeg);
+        SquarePegAdapter smallSqPegAdapter = new SquarePegAdapter(smallSqPeg);  // we wrap the incompatible entity with our adapter. 
         SquarePegAdapter largeSqPegAdapter = new SquarePegAdapter(largeSqPeg);
         if (hole.fits(smallSqPegAdapter)) {
             System.out.println("Square peg w2 fits round hole r5.");
